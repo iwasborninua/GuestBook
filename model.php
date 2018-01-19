@@ -4,7 +4,8 @@ require_once "db_connection.php";
 
 function getNotes()
 {
-    global $db;
+
+    $db = DBConnection::getConnection();
 
     $query = "SELECT *
           FROM notes";
@@ -16,7 +17,7 @@ function getNotes()
 
 function setNotes($title, $content)
 {
-    global $db;
+    $db = DBConnection::getConnection();
 
     $query = "INSERT INTO notes VALUES(NULL, ?, ?)";
     $arr = $db->prepare($query);

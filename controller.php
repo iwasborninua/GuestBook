@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Nirvana
- * Date: 18.01.2018
- * Time: 23:46
- */
+
+require_once "model.php";
+
+$notes = getNotes();
+
+if (!empty($_REQUEST['add']))
+{
+    setNotes($_REQUEST['title'], $_REQUEST['content']);
+}
+
+
+include "view.php";

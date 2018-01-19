@@ -6,13 +6,32 @@
  * Time: 23:47
  */
 
-try
+class DBConnection
 {
-    $db = new PDO('mysql:host=localhost;dbname=guestbook', "root", "");
-}
+    protected static $connection;
 
-catch (PDOException $e)
-{
-    echo "Ошибка подключения к базе данных " . $e->getMessage();
-    die();
+    public static function getConnection()
+    {
+        if (static::$connection === null) {
+            static::$connection = static::createConnection();
+        }
+
+        return static::$connection;
+    }
+
+    protected  static function createConnection()
+    {
+        try
+        {
+            $db = new PDO('mysql:host=localhost;dbname=guestbook', "root", "");
+        }
+
+        catch (PDOException $e)
+        {
+            echo "Ошибка подключения к базе данных " . $e->getMessage();
+            die();
+        }
+
+        return $db;
+    }
 }

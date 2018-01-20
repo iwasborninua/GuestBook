@@ -5,18 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Guest Book</title>
 </head>
 <body>
-    <form action="controller.php" method="POST">
-        <input type="text" name="title" placeholder="Заголовок"></br>
-        <textarea name="content" cols="60" rows="5" placeholder="Введите ваш контент"></textarea></br>
-        <input type="submit" name="add" value="Добавить">
-    </form>
-
-    <?php foreach ($notes as $note):?>
-        <h4><?=$note['title'];?></h4>
-        <p><?=$note['content'];?></p>
-    <?endforeach;?>
+    <div class="container">
+        <form action="controller.php" method="POST">
+            <input type="text" name="title" placeholder="Заголовок" class="title"></br>
+            <textarea name="content"  rows="5" placeholder="Введите ваш контент" class="content"></textarea></br>
+            <input type="submit" name="add" value="Добавить" class="button">
+        </form>
+            <?php foreach ($notes as $note):?>
+            <section>
+                <h4><?=$note['title'];?></h4>
+                <p><?=$note['content'];?></p>
+            </section>
+            <?endforeach;?>
+    </div>
 </body>
 </html>

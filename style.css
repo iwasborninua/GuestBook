@@ -1,0 +1,83 @@
+* {
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+    background-image: url('wall.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+form {
+    padding-top: 40px;
+}
+
+    form input.title, textarea.content {
+        width: 100%;
+        margin-bottom: 5px;
+        border: 1px solid #000000;
+        padding: 5px;
+        border-radius: 5px;
+        background: transparent;
+        transition: 0.4s;
+    }
+
+    form input.title:focus, textarea.content:focus {
+        border: 1px solid #ff1111;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    form input.button{
+        margin-bottom: 5px;
+        border: 1px solid #000000;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: transparent;
+        transition: 0.4s;
+    }
+
+    form input.button:hover {
+        background: #ff1111;
+        border: 1px solid #ff1111;
+    }
+
+section {
+    margin-top: 40px;
+}
+
+    h4 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}

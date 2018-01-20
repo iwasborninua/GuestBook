@@ -19,7 +19,7 @@ class DBConnection
         return static::$connection;
     }
 
-    protected  static function createConnection()
+    protected static function createConnection()
     {
         try
         {

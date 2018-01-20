@@ -5,9 +5,11 @@
 
 
 body {
-    background-image: url('wall.jpg');
+    background-image: url('../images/wall.jpg');
     background-repeat: no-repeat ;
     background-size: cover;
+    min-height: 100vh;
+    min-width: 320px;
 }
 
 .container {
@@ -69,15 +71,34 @@ section {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .container {
+        width: 500px;
+        margin: auto;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-
+    .container {
+        width: 400px;
+        margin: auto;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .container {
+        width: 250px;
+        margin: auto;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 
 }

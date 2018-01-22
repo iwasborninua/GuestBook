@@ -12,4 +12,5 @@ if (!empty($_REQUEST['add'] && $_REQUEST['title'] && $_REQUEST['content']))
 }
 
 $notes = getNotes();
+
 include "view.php";

@@ -8,21 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Guest Book</title>
 </head>
 <body>
     <div class="container">
         <form action="controller.php" method="POST">
-            <input type="text" name="title" placeholder="Заголовок" class="title"></br>
-            <textarea name="content"  rows="5" placeholder="Введите ваш контент" class="content"></textarea></br>
+            <input type="text" name="title" placeholder="Заголовок или имя" class="title"></ br>
+            <textarea name="content"  rows="5" placeholder="Ваше сообщение..." class="content"></textarea></ br>
             <input type="submit" name="add" value="Добавить" class="button">
-        </form>
+        </ form>
             <?php foreach ($notes as $note):?>
-            <section>
-                <h4><?=$note['title'];?></h4>
-                <p><?=$note['content'];?></p>
-            </section>
+                <section>
+                    <h4><?=$note['title'];?></h4>
+                    <p><?=$note['content'];?></p>
+                    <p class="date"><?=dateFormat($note['date']);?></p>
+                </section>
             <?endforeach;?>
-    </div>
-</body>
-</html>
+    </ div>
+
+    <script src="js/guest_book.js"></script>
+</ body>
+</ html>

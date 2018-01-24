@@ -1,5 +1,4 @@
 <?php
-error_reporting(E_ALL);
 require_once "model.php";
 
 if (!empty($_REQUEST['add'] && !empty($_REQUEST['title']) && !empty($_REQUEST['content'])))

@@ -17,93 +17,92 @@ body {
     margin: auto;
 }
 
-form {
-    padding-top: 40px;
-}
-
-    form input.title, textarea.content {
-        width: 100%;
-        margin-bottom: 5px;
-        border: 1px solid #000000;
-        padding: 5px;
-        border-radius: 5px;
-        background: transparent;
-        transition: 0.4s;
+    form {
+        padding-top: 40px;
     }
 
-    form input.title:focus, textarea.content:focus {
-        border: 1px solid #ff1111;
-        background: rgba(255, 255, 255, 0.6);
-    }
-
-    form input.button{
-        margin-bottom: 5px;
-        border: 1px solid #000000;
-        padding: 5px 10px;
-        border-radius: 5px;
-        background: transparent;
-        transition: 0.4s;
-    }
-
-    form input.button:hover {
-        background: #ff1111;
-        border: 1px solid #ff1111;
-    }
-
-
-
-ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 40px 0 40px 0;
-}
-
-    ul li {
-        display: inline-block;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 5px;
-        transition: 0.4s;
-        margin-bottom: 5px;
-    }
-
-        ul li a {
-            text-decoration: none;
-            /*padding: 10px 10px;*/
-            display: block;
-            width: 20px;
+        form input.title, textarea.content {
+            width: 100%;
+            margin-bottom: 5px;
+            border: 1px solid #000000;
             padding: 5px;
-            color: #000000;
+            border-radius: 5px;
+            background: transparent;
+            transition: 0.4s;
         }
 
-    ul li:hover {
-        background: rgba(255, 255, 255, 1);
-
-    }
-
-        ul li.active {
-            background-color: red;
+        form input.title:focus, textarea.content:focus {
+            border: 1px solid #ff1111;
+            background: rgba(255, 255, 255, 0.6);
         }
 
-section {
-    margin-top: 40px;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 5px 15px;
-    border-radius: 10px;
-}
+        form input.button{
+            margin-bottom: 5px;
+            border: 1px solid #000000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: transparent;
+            transition: 0.4s;
+        }
 
-    h4 {
-        margin-bottom: 10px;
-        font-size: 24px;
+        form input.button:hover {
+            background: #ff1111;
+            border: 1px solid #ff1111;
+        }
+
+
+
+    ul {
+        list-style-type: none;
         text-align: center;
+        margin: 40px 0 40px 0;
     }
 
-    p.date{
-        font-size: 18px;
-        padding: 5px;
-        text-align: right;
-        font-size: 14px;
-        font-style: italic;
+        ul li {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 5px;
+            transition: 0.4s;
+            margin-bottom: 5px;
+        }
+
+            ul li a {
+                text-decoration: none;
+                /*padding: 10px 10px;*/
+                display: block;
+                width: 20px;
+                padding: 5px;
+                color: #000000;
+            }
+
+        ul li:hover {
+            background: rgba(255, 255, 255, 1);
+
+        }
+
+            .active {
+                background-color: red;
+            }
+
+    section {
+        margin-top: 40px;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 5px 15px;
+        border-radius: 10px;
     }
+
+        h4 {
+            margin: 5px 0 10px 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p.date{
+            padding: 5px;
+            text-align: right;
+            font-size: 14px;
+            font-style: italic;
+        }
 
 
 /* Large Devices, Wide Screens */

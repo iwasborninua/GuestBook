@@ -28,7 +28,9 @@
 
         <ul class="pagination">
             <?php for ($i = 0; $i < $pagination; $i++) { ?>
-                <li><a href="?page=<?=$i+1?>"><?=$i + 1;?></a></li>
+                <li <?=$i + 1 == $_GET['page'] ? 'class="active"' : '';?>>
+                    <a href="?page=<?=$i+1?>"><?=$i + 1;?></a>
+                </li>
             <?php }?>
         </ul>
     </ div>

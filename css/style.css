@@ -50,6 +50,30 @@ form {
         border: 1px solid #ff1111;
     }
 
+
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+    ul li {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 7px;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+
+    ul li:hover {
+        background: rgba(255, 255, 255, 1);
+
+    }
+
+        ul li.active {
+            background-color: red;
+        }
+
 section {
     margin-top: 40px;
     background: rgba(255, 255, 255, 0.5);

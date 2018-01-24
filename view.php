@@ -25,8 +25,13 @@
                     <p class="date"><?=dateFormat($note['date']);?></p>
                 </section>
             <?endforeach;?>
-    </ div>
 
+        <ul class="pagination">
+            <?php for ($i = 0; $i < $pagination; $i++) { ?>
+                <li><a href="?page=<?=$i+1?>"><?=$i + 1;?></a></li>
+            <?php }?>
+        </ul>
+    </ div>
     <script src="js/guest_book.js"></script>
 </ body>
 </ html>

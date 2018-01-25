@@ -24,6 +24,7 @@ class DBConnection
         try
         {
             $db = new PDO('mysql:host=localhost;dbname=guestbook', "root", "");
+            $db->exec("SET NAMES utf8");
         }
 
         catch (PDOException $e)

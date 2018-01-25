@@ -12,28 +12,28 @@
     <title>Guest Book</title>
 </head>
 <body>
-    <div class="container">
-        <form action="controller.php" method="POST">
-            <input type="text" name="title" placeholder="Заголовок или имя" class="title"></ br>
-            <textarea name="content"  rows="5" placeholder="Ваше сообщение..." class="content"></textarea></ br>
-            <input type="submit" name="add" value="Добавить" class="button">
-        </ form>
-            <?php foreach ($notes as $note):?>
-                <section>
-                    <h4><?=$note['title'];?></h4>
-                    <p><?=$note['content'];?></p>
-                    <p class="date"><?=dateFormat($note['date']);?></p>
-                </section>
-            <?endforeach;?>
+<div class="container">
+    <form action="controller.php" method="POST">
+        <input type="text" name="title" placeholder="Заголовок или имя" class="title"></ br>
+    <textarea name="content"  rows="5" placeholder="Ваше сообщение..." class="content"></textarea></ br>
+<input type="submit" name="add" value="Добавить" class="button">
+</ form>
+<?php foreach ($notes as $note):?>
+    <section>
+        <h4><?=$note['title'];?></h4>
+        <p><?=$note['content'];?></p>
+        <p class="date"><?=dateFormat($note['date']);?></p>
+    </section>
+<?endforeach;?>
 
-        <ul class="pagination">
-            <?php for ($i = 0; $i < $pagination; $i++) { ?>
-                <li <?=$i + 1 == $_GET['page'] ? 'class="active"' : '';?>>
-                    <a href="?page=<?=$i+1?>"><?=$i + 1;?></a>
-                </li>
-            <?php }?>
-        </ul>
-    </ div>
-    <script src="js/guest_book.js"></script>
+<ul class="pagination">
+    <?php for ($i = 0; $i < $pagination; $i++) { ?>
+        <li <?=isset($_GET['page']) && $i + 1 == $_GET['page'] ? 'class="active"' : '';?>>
+            <a href="?page=<?=$i+1?>"><?=$i + 1;?></a>
+        </li>
+    <?php }?>
+</ul>
+</ div>
+<script src="js/guest_book.js"></script>
 </ body>
 </ html>

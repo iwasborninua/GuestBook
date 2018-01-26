@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247c10bd-4dfc-4798-845b-a2c0049a2069" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/db_connection.php" afterPath="$PROJECT_DIR$/db_connection.php" />
       <change beforePath="$PROJECT_DIR$/view.php" afterPath="$PROJECT_DIR$/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="553">
+              <caret line="30" column="89" lean-forward="false" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -226,7 +225,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76382000" />
+    <option name="totallyTimeSpent" value="78469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -706,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="553">
+          <caret line="30" column="89" lean-forward="false" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
           <folding />
         </state>
       </provider>
